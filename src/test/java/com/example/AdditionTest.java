@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AdditionTest {
+public class AdditionTest {
 
     Addition addition = new Addition();
 
@@ -34,7 +34,7 @@ class AdditionTest {
     }   @Test
 
     @org.junit.Test
-    void coverApp() {
+    public void coverApp() {
         App.main(new String[]{});
     }
 }
