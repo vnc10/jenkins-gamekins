@@ -16,4 +16,10 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         assertEquals(5, calculator.evaluate("2+3"));
     }
+
+    @Test
+    void testEvaluate3() {
+        Calculator calculator = new Calculator();
+        assertEquals(10, calculator.evaluate("2+8"));
+    }
 }
