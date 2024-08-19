@@ -10,4 +10,10 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         assertEquals(4, calculator.evaluate("2+2"));
     }
+
+    @Test
+    void testEvaluate2() {
+        Calculator calculator = new Calculator();
+        assertEquals(5, calculator.evaluate("2+3"));
+    }
 }
