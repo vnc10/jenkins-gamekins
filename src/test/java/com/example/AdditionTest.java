@@ -33,4 +33,9 @@ public class AdditionTest {
         assertEquals(-2, addition.add(1, -3));
     }
 
+    @Test
+    void testAddNegativeValues2() {
+        assertEquals(-3, addition.add(1, -4));
+    }
+
 }
