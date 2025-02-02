@@ -38,6 +38,13 @@ public class RationalTest {
     }
 
     @Test
+    void testEquals2ASD() {
+        Rational rational1 = Rational.of(8);
+        Rational rational2 = Rational.of(8);
+        assertEquals(rational2, rational1);
+    }
+
+    @Test
     void testEquals3() {
         Rational rational1 = Rational.of(3);
         Rational.ofLong(3L);
