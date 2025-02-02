@@ -22,4 +22,11 @@ public class RationalTest {
         Rational rational2 = Rational.of(3);
         assertEquals(rational2, rational1);
     }
+
+    @Test
+    void testOfNew() {
+        BigInteger numerator = BigInteger.valueOf(3);
+        BigInteger denominator = BigInteger.ZERO;
+        assertThrows(IllegalArgumentException.class, () -> Rational.of(numerator, denominator));
+    }
 }
