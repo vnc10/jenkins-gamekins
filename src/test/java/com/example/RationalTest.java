@@ -53,6 +53,13 @@ public class RationalTest {
     }
 
     @Test
+    void testEquals2ASDd() {
+        Rational rational1 = Rational.of(9);
+        Rational rational2 = Rational.of(9);
+        assertEquals(rational2, rational1);
+    }
+
+    @Test
     void testEquals2ASDssdd() {
         Rational rational1 = Rational.of(89);
         Rational rational2 = Rational.of(89);
