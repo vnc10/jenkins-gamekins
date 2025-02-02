@@ -43,4 +43,10 @@ public class RationalTest {
         Rational.ofLong(3L);
         assertEquals(rational1, Rational.ofLong(3L));
     }
+
+    @Test
+    void testEquals4() {
+        Rational rational1 = Rational.of(4);
+        assertEquals(rational1, Rational.ofLong(4L));
+    }
 }
