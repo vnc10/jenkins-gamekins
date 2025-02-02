@@ -36,4 +36,11 @@ public class RationalTest {
         Rational rational2 = Rational.of(5);
         assertEquals(rational2, rational1);
     }
+
+    @Test
+    void testEquals3() {
+        Rational rational1 = Rational.of(3);
+        Rational.ofLong(3L);
+        assertEquals(rational1, Rational.ofLong(3L));
+    }
 }
