@@ -17,6 +17,14 @@ public class RationalTest {
     }
 
     @Test
+    void testOfnew() {
+        BigInteger numerator = BigInteger.ONE;
+        BigInteger denominator = BigInteger.ZERO;
+        assertThrows(IllegalArgumentException.class, () -> Rational.of(numerator, denominator));
+    }
+
+
+    @Test
     void testEquals() {
         Rational rational1 = Rational.of(3);
         Rational rational2 = Rational.of(3);
