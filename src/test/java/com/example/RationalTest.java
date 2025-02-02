@@ -29,4 +29,11 @@ public class RationalTest {
         BigInteger denominator = BigInteger.ZERO;
         assertThrows(IllegalArgumentException.class, () -> Rational.of(numerator, denominator));
     }
+
+    @Test
+    void testEquals2() {
+        Rational rational1 = Rational.of(5);
+        Rational rational2 = Rational.of(5);
+        assertEquals(rational2, rational1);
+    }
 }
