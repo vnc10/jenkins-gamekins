@@ -49,4 +49,11 @@ public class RationalTest {
         Rational rational1 = Rational.of(4);
         assertEquals(rational1, Rational.ofLong(4L));
     }
+
+    @Test
+    void testEquals2New() {
+        Rational rational1 = Rational.of(6);
+        Rational rational2 = Rational.of(6);
+        assertEquals(rational2, rational1);
+    }
 }
