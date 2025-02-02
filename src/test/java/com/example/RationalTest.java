@@ -73,6 +73,13 @@ public class RationalTest {
     }
 
     @Test
+    void testEquals2ASDssdddasdasasdasdadasdasadssasdasadsads() {
+        Rational rational1 = Rational.of(900);
+        Rational rational2 = Rational.of(900);
+        assertEquals(rational2, rational1);
+    }
+
+    @Test
     void testEquals3() {
         Rational rational1 = Rational.of(3);
         Rational.ofLong(3L);
